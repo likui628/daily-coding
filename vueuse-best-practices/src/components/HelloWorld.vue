@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useToggle } from "@vueuse/core";
+import Scope from "./Scope.vue";
 
 const initValue = ref(true);
 const toggle = useToggle(initValue);
@@ -12,6 +13,7 @@ const toggle = useToggle(initValue);
     <button @click="toggle()">Toggle</button>
     <button @click="initValue = true">Set ON</button>
     <button @click="initValue = false">Set OFF</button>
+    <Scope v-if="initValue"></Scope>
   </div>
 </template>
 
