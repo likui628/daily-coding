@@ -1,0 +1,22 @@
+{
+  "name": "pnpm-monorepo",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "vue": "pnpm --filter vue dev",
+    "react": "pnpm --filter react dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  }
+}
