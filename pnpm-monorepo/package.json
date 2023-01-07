@@ -6,7 +6,8 @@
   "scripts": {
     "bootstrap": "pnpm install",
     "vue": "pnpm --filter vue dev",
-    "react": "pnpm --filter react dev"
+    "react": "pnpm --filter react dev",
+    "backend":"pnpm -filter backend start:dev"
   },
   "keywords": [],
   "author": "",
